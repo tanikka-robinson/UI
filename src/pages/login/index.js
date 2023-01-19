@@ -6,6 +6,7 @@ import { Button } from "../../components/button";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaCheck } from "react-icons/fa";
+import logoSignup from "../../assets/signup-vector-top.svg";
 export const LoginField = () => {
   const [checked, setChecked] = useState(true);
   console.log(checked);
@@ -15,20 +16,19 @@ export const LoginField = () => {
         <img src={logo} alt="RBR"></img>
       </div>
       <div className="login-field-container">
+        <img src={logoSignup} alt="vector" className="logo-signup"></img>
         <div className="login-field-empty"></div>
         <div className="login-field">
           <div className="login-field-header">
-            <div className="open-label">Open New Account</div>
-            <div className="started-label">Get started below</div>
+            <div className="open-label">Log In</div>
+            <div className="started-label">Please login to continue</div>
             <div className="login-field-header-tab-container"></div>
           </div>
           <div className="login-form">
             <TabForm></TabForm>
             <div class="input-container">
               <InputForm label="Username" type="text"></InputForm>
-              <InputForm label="Email" type="text"></InputForm>
               <InputForm label="Password" type="password"></InputForm>
-              <InputForm label="Confirm Password" type="password"></InputForm>
               <div className="signup-info">
                 <div className="checkmark-container">
                   <input type="checkbox"></input>
@@ -39,14 +39,9 @@ export const LoginField = () => {
                     {checked && <FaCheck style={{ color: "white" }} />}
                   </span>
                 </div>
-                <div style={{ color: "white" }}>
-                  by continuing you are agreeing to RBR
-                </div>
-                <div style={{ color: "white" }}>
-                  Terms of use and Privacy Policy
-                </div>
+                <div style={{ color: "white" }}>Remember me</div>
               </div>
-              <Button title="Sign Up"></Button>
+              <Button title="Log In"></Button>
             </div>
           </div>
         </div>
