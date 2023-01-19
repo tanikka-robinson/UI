@@ -30,7 +30,6 @@ export const RecoveryField = () => {
             <TabForm></TabForm>
             <div class="input-container">
               <InputForm label="Username" type="text"></InputForm>
-              <InputForm label="Password" type="password"></InputForm>
               <div className="signup-info">
                 <div className="checkmark-container">
                   <input type="checkbox"></input>
